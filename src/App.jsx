@@ -11,6 +11,7 @@ const agenda = lazy(()=>import('./pages/agenda'))
 const Relatorio = lazy(()=>import('./pages/relatorioproduto'))
 const Venda = lazy(()=>import('./pages/venda'))
 const Login = lazy(()=>import('./pages/login'))
+const Adm = lazy(()=>import('./pages/adm.jsx'))
 
 const App = ()=>(
   <div>
@@ -21,7 +22,7 @@ const App = ()=>(
       <Route path="/agenda" element={<Agenda/>}></Route>
       <Route path="/cliente" element={<Cliente/>}></Route>
       <Route path="/funcionario" element={<Funcionario/>}></Route>
-      <Route path="/venda" element={<Venda/>}></Route>
+      <Route path="/adm" element={<Adm/>}></Route>
       <Route path="/relatorio" element={<Relatorio/>}></Route>
     </Routes>
 

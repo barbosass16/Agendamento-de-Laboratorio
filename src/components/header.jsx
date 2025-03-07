@@ -38,7 +38,7 @@ const MenuDrop=() =>{
                             <p>Acessar</p>
                             { openMenu==="gerenciar" &&(
                                 <div className="sub-menu">
-                                    <Link to="/cliente" onClick={closeMenu}>Administrador</Link>
+                                    <Link to="/adm" onClick={closeMenu}>Administrador</Link>
                                     <Link to="/funcionario" onClick={closeMenu}>Professores</Link>
                                     <Link to="/cliente" onClick={closeMenu}>Alunos</Link>
                                     <Link to="/funcionario" onClick={closeMenu}>Funcionarios</Link>
