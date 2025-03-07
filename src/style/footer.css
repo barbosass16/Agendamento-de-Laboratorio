@@ -1,0 +1,26 @@
+footer{
+    background-color: white;
+   
+}
+hr{
+    color: gray;
+}
+footer .copy{
+    text-align: center;
+    padding: 30px 0px;
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+.footer-conteiner{
+    padding: 30px 200px;
+}
+.footer-conteiner p{
+
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+.footer-conteiner img{
+    margin: 10px 0px 25PX 0px;
+}
