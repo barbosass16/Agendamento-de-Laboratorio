@@ -1,9 +1,15 @@
 import React from "react";
 
+import MenuDrop from "../components/header"
+import Footer from "../components/footer";
+
+
+
 const Home=() =>{
     return(
-        <div>
-            <h1>home page </h1>            
+        <div className="main">
+             <MenuDrop/>
+           
         </div>
     )
 }
