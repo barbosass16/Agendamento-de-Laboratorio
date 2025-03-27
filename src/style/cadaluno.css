@@ -1,0 +1,130 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* Container dos cards */
+.cad-conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 65vw;
+    margin: 0 auto;
+    
+}
+
+/* Card individual */
+.card-input {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do Card */
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos campos de label e input */
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+select{
+    background-color: #2f9e41 ; /* Verde para salvar */
+    color: white;
+}
+
+/* Para inputs tipo rádio (sexo) */
+.labelr {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radios {
+    margin-left: 5px;
+}
+
+/* Organizar os campos de um card em flexbox */
+.card-input fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: none;  /* Remove a borda do fieldset */
+}
+
+.card-input fieldset label {
+    flex: 1 1 45%;  /* A largura padrão é 45% dos campos */
+}
+
+@media (max-width: 768px) {
+    .card-input fieldset label {
+        flex: 1 1 100%; /* Se a tela for pequena, cada campo ocupa 100% da largura */
+    }
+}
+
+
+/* Estilo para os botões */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 20px;
+}
+
+/* Botão padrão */
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Botões individuais */
+.btn-salvar {
+    background-color: #2f9e41 ; /* Verde para salvar */
+    color: white;
+}
+
+.btn-salvar:hover {
+    background-color: #1f792e ;
+}
+
+.btn-alterar {
+    background-color: #2f9e41 ; /* Laranja para alterar */
+    color: white;
+}
+
+.btn-alterar:hover {
+    background-color: #1f792e ;
+}
+
+.btn-excluir {
+    background-color: #2f9e41 ; /* Vermelho para excluir */
+    color: white;
+}
+
+.btn-excluir:hover {
+    background-color: #1f792e ;
+}

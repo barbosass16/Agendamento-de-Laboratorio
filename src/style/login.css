@@ -1,0 +1,107 @@
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    background-color: rgb(237, 237, 237);
+}
+.cadastro-conteiner{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.page-padding{
+    margin: auto;
+    width: 80%;
+}
+
+img{
+    margin: 10px auto;
+    width: 100px;
+}
+.login-conteiner{
+    margin: 150px auto;
+    background-color: white;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #197829;
+}
+
+.login{
+    width: 100%;
+}
+.login h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 10px 0px;
+}
+.input label{
+    text-align: center;
+    margin: 5px 0px;
+    width: 80%;
+    margin: auto;
+    
+}
+.input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.input input{
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0px;
+    width: 200px;
+    background-color: rgb(241, 241, 241);
+    border: 0px;
+}
+.btlogin{
+    margin:  20px auto;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.btlogin .btlogar{
+    background-color: #529a5e ;
+    padding: 9px;
+    border: 0px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+    color: white;
+}
+.input a, .btlogar:hover{
+    background-color: #197829 ;
+}
+
+.btcancelar{
+    background-color: white;
+    border: 1px solid #197829;
+}
+.btlogin .btcancelar{
+    background-color: white ;
+    padding: 8px;
+    border: 0px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 500;
+    color: #529a5e;
+    border: 1px solid #529a5e;
+}
+.input a, .btcancelar:hover{
+    background-color: #dcdcdc ;
+}
+
+.endereco{
+    display: flex;
+}
+

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.redes-sociais ul{
+    display: flex;
+    align-items: center;
+}
+.redes-sociais ul li a{
+    margin: 10px;
+    font-size: 22px;
+}
+
+.menu-bar{
+    position: fixed;
+    display: flex;
+   background-image: linear-gradient( #2f9e41, #186b26);
+    margin-right: 60vh;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100vh;
+    padding: 10px 0px;
+    align-items: center;
+    font-family: Arial Narrow;
+    border-radius: 2px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.menu-bar p {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    cursor: pointer;
+    margin: 0px 25px;
+   
+}
+img{
+    width: 90px;
+    align-self: center;
+}
+.menu-link{
+    position: relative;
+    margin: 0 10;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.sub-menu{
+    display: none;
+    position: relative;
+    padding: 5px 0px;
+    width: 200px;
+    top: 5px;
+    left: 0px;
+    white-space: nowrap;
+    background-color: #2f9e41;
+    box-shadow: 0 0 1px 0px;
+    border-radius: 5px;
+   
+}
+.menu-link:hover .sub-menu{
+    display: block;
+}
+.sub-menu a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    font-family: Arial Narrow;
+    font-weight: 600;
+}
+.sub-menu a:hover{
+    background-color: #2f9e41;
+    color: white;
+    text-decoration: underline;
+}
