@@ -5,19 +5,18 @@ import Logo from '../img/logoif.png'
 function Login() {
     return(
        <div className="login-conteiner">
-        <div className="apresenta">
-            <h2>Entrar no Sistema</h2>
-            <p>Faça login para acessar os recursos do sistema</p>
-        </div>
         
         <div className="login">
-            <h2>Continuajk</h2>
+            <img src={Logo} alt="" />
             <div className="input">
-                <label htmlFor="">Usuario:<input type="text" /></label>
-                <label htmlFor="">Senha:<input type="text" /></label>
+                <label >Usuario:<input type="text" placeholder="Digite se nome de Usuario"/></label>
+                <label >Senha:<input type="passowrd"  placeholder="Digite sua senha"/></label>
             </div>
             
-                <Link to='/home'><button>Continuar</button></Link>
+                <div className="buttons">
+                    <button><Link to='/home'>Continuar</Link></button>
+                    <button className="cancelb"><Link  to='/home'>Cancelar</Link></button>
+                </div>
             
         </div>
        </div>

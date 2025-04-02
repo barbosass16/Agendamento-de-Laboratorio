@@ -9,23 +9,19 @@ body{
 .login-conteiner{
     margin: 150px auto;
     background-color: white;
-    width: 600px;
+   width: 500px;
 
     display: flex;
     flex-direction: row-reverse;
 
 }
-.apresenta{
-    width: 50%;
-    background-image: linear-gradient(to bottom, #47c75c, #044d10);
-    padding: 30px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    
+img{
+    width: 100px;
+    margin: auto;
 }
+
 .login{
-    width: 50%;
+    width: 100%;
     padding: 30px;
 }
 .login h2{
@@ -43,20 +39,42 @@ body{
     border-radius: 5px;
     padding: 8px;
     margin: 5px 0px;
-    background-color: rgb(241, 241, 241);
-    border: 0px;
+    border: 1px solid gray;
 }
-.input a,button{
+.buttons{
+    display: flex;
+    width: 150px;
+    margin: auto;
+    justify-content: space-between;
+}
+.buttons .cancelb{
     padding: 8px;
     border: 0px;
     cursor: pointer;
     transition: 0.5s;
     margin: 5px;
-    margin: 0px 80px;
     font-weight: 500;
+    background-color: #e6e6e6;
+    color: #2f9e41;
 }
-.input a,button:hover{
-    padding: 10px;
-    border-radius: 4px;
-    background-color: rgb(212, 212, 212);
+.cancelb a{
+    color: #227930;
+}
+.buttons button{
+    padding: 8px;
+    border: 0px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 5px;
+    font-weight: 500;
+    background-color: #2f9e41;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.cancelb,button:hover{
+    color: white;
+    background-color: #227930;
 }

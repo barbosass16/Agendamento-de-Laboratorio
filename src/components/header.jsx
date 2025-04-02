@@ -26,7 +26,7 @@ const MenuDrop = () => {
                                 <p>Gerenciar</p>
                                 {openMenu === "consultar" && (
                                     <div className="sub-menu">
-                                        <Link to="/cadaluno" onClick={closeMenu}>Cadastrar Aluno</Link>
+                                        <Link to="/cadaluno" onClick={closeMenu}>Cadastrar Discente</Link>
                                         <Link to="/cadlab" onClick={closeMenu}>Cadastrar Laboratorio</Link>
                                         <Link to="/cadprofessor" onClick={closeMenu}>Cadastrar Professor</Link>
                                     </div>
@@ -34,14 +34,10 @@ const MenuDrop = () => {
                             </div>
 
                             <div className="menu-link" onMouseEnter={() => Menu("agendamento")} onMouseLeave={closeMenu}>
-                                <p>Agendamento</p>
-                                {openMenu === "agendamento" && (
-                                    <div className="sub-menu">
-                                        <Link to="/" onClick={closeMenu}>Alterar</Link>
-                                        <Link to="/cancelar" onClick={closeMenu}>Cancelar</Link>
-                                        <Link to="/solicitar" onClick={closeMenu}>Solicitar</Link>
-                                    </div>
-                                )}
+                                <Link to="/agendamento">
+                                    <p>Agendamento</p>
+                                </Link>
+                                
                             </div>
 
                             <div className="menu-link" onMouseEnter={() => Menu("relatorio")} onMouseLeave={closeMenu}>

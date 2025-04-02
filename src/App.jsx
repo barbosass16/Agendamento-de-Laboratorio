@@ -7,12 +7,10 @@ const Cadlab= lazy(()=>import('./pages/cdlab'))
 const Home= lazy(()=>import('./pages/home'))
 const CadAluno= lazy (()=>import ('./pages/cadaluno'))
 const CadProfessor= lazy (()=>import ('./pages/cadprofessor'))
-const Alterar= lazy (()=>import ('./pages/alterar'))
-const Cancelar= lazy (()=>import ('./pages/cancelar'))
-const Solicitar= lazy (()=>import ('./pages/solicitar'))
 const RelAgenda= lazy (()=>import ('./pages/relatorioagenda'))
 const RelatorioCancela = lazy (()=>import ('./pages/relatoriocancela'))
 const Sobrenos = lazy (()=>import ('./pages/sobrenos'))
+const Agendamento = lazy (()=> import ('./pages/agendamento'))
 
 const App = ()=>(
   <div>
@@ -23,12 +21,10 @@ const App = ()=>(
       <Route path="/cadlab" element={<Cadlab/>}></Route>
       <Route path="/cadaluno" element={<CadAluno/>}></Route>
       <Route path="/cadprofessor" element={<CadProfessor/>}></Route>
-      <Route path="/alterar" element={<Alterar/>}></Route>
-      <Route path="/cancelar" element={<Cancelar/>}></Route>
-      <Route path="/solicitar" element={<Solicitar/>}></Route>
       <Route path="/relatorioagenda" element={<RelAgenda/>}></Route>
       <Route path="/relatoriocancela" element={<RelatorioCancela/>}></Route>
-      <Route path="/sobrenos" element={<Sobrenos/>}></Route>  
+      <Route path="/sobrenos" element={<Sobrenos/>}></Route> 
+      <Route path="/agendamento" element={<Agendamento/>}></Route>   
 
     </Routes>
 
