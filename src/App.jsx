@@ -5,7 +5,7 @@ import {Router, Route, Routes } from "react-router-dom"
 const Login = lazy(()=>import ('./pages/login'))
 const Cadlab= lazy(()=>import('./pages/cdlab'))
 const Home= lazy(()=>import('./pages/home'))
-const CadAluno= lazy (()=>import ('./pages/cadaluno'))
+const CadAluno= lazy (()=>import ('./pages/caddiscente'))
 const CadProfessor= lazy (()=>import ('./pages/cadprofessor'))
 const RelAgenda= lazy (()=>import ('./pages/relatorioagenda'))
 const RelatorioCancela = lazy (()=>import ('./pages/relatoriocancela'))

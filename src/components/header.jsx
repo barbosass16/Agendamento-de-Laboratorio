@@ -22,6 +22,12 @@ const MenuDrop = () => {
                 <div className="cabe">
                     <div className="menu-bar">
                         <div className="links">
+                            <div className="menu-link" onMouseEnter={() => Menu("home")} onMouseLeave={closeMenu}>
+                                <Link to="/home">
+                                    <p>Home</p>
+                                </Link>
+                                
+                            </div>
                             <div className="menu-link" onMouseEnter={() => Menu("consultar")} onMouseLeave={closeMenu}>
                                 <p>Gerenciar</p>
                                 {openMenu === "consultar" && (
@@ -32,6 +38,7 @@ const MenuDrop = () => {
                                     </div>
                                 )}
                             </div>
+
 
                             <div className="menu-link" onMouseEnter={() => Menu("agendamento")} onMouseLeave={closeMenu}>
                                 <Link to="/agendamento">
